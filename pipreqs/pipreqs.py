@@ -443,7 +443,7 @@ def init(args):
     imports = sorted(imports, key=lambda x: x['name'].lower())
 
     path = (args["--savepath"] if args["--savepath"] else
-            os.path.join(input_path, "requirements.txt"))
+            os.path.join(input_path, "lxn_requirements.txt"))
 
     if args["--diff"]:
         diff(args["--diff"], imports)
